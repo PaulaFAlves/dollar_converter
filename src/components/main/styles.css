@@ -1,0 +1,133 @@
+.main {
+    width: 700px;
+    height: 350px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #Fafafa;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.inputValues {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+}
+.inputValues input {
+    margin-right: 10px;
+    text-align: center;
+}
+.labelInput {
+    color: #424242;
+    margin-right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.mainButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.mainButton p {
+    margin-left: 5px;
+    margin-right: 40px;
+    font-size: 15px;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button button {
+    width: 100px;
+    height: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 12px;
+    background-color: #424242;
+    opacity: 0.8;
+    color: #fff;
+    margin-bottom: 22px;
+    transition: 0.3s;
+}
+.button button:hover {
+     color: #424242;
+     background-color: #fff;
+}
+.results {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+}
+.results p {
+    width: 200px;
+    font-size: 18px;
+    text-align: right;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.results p + p{
+    font-weight: bold;
+    text-align: left;
+}
+
+
+
+
+
+
+
+/* input:focus::-webkit-input-placeholder {
+    color: transparent;
+} */
+/* .labelInput {
+    font-weight: bold;
+    margin-left: 10px;
+}
+.labelInput input {
+    margin-left: 10px;
+}
+.button {
+    display: flex;
+    justify-content: center;
+    /* align-items: stretch; */
+    /* margin: 20px;  
+    font-weight: bold;
+}
+.button label input {
+    margin-left: 30px;
+    font-weight: bold;
+}  */
+/* .main .mainText {
+    height: 30px;
+    font-size: 15px;
+    border: none;
+    text-align: center;
+    margin: 5px;
+}
+button {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    cursor: pointer;
+    width: 100px;
+} */
+/* .button:hover {
+    color: #424242;
+    background: #fff;
+} 
+.resposta {
+margin: 40px;
+}
+.resposta p {
+    padding: 0 20px;
+    font-size: 15px;
+    font-weight: bold;
+} */
+
+
+
