@@ -1,5 +1,6 @@
-import React, { useState, Component } from 'react';
-import api from '../../services/api'
+import React, { Component } from 'react';
+import api from '../../services/api';
+import $ from 'jquery';
  
 import './styles.css';
 
@@ -14,9 +15,11 @@ export default class Convert extends Component {
       iof: '',
       resultDollarWithFee: '',
       resultNoFee: '',
-      resultWithFee: ''
+      resultWithFee: '',
+      data: []
     }
   }
+
 
   handleChangeValue = (event) => {
     this.setState({value: event.target.value})   
@@ -28,6 +31,16 @@ export default class Convert extends Component {
     this.setState({action: event.target.value});
   }
   
+  componentDidMount() {
+    this.loadCharacters();
+  }
+
+  loadCharacters = async () => {
+    const response = await api.get('/');
+
+    this.setState({ data: response.data })
+    console.log(response[1])  
+  }
 
   handleConvert = (e) => {
     e.preventDefault();
@@ -38,8 +51,6 @@ export default class Convert extends Component {
     let tax = (1 + (parseFloat(this.state.tax) / 100))
     this.setState({ quote: quote })
 
-    const data = api.get('')
-    
     if (this.state.action === "cash") {
       iof = 1.1
       this.setState({ iof: iof})
